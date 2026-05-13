@@ -15,4 +15,5 @@ export const PAGE_NAV = [
   { href: '#work', label: 'Work' },
   { href: '#areas', label: 'Areas' },
   { href: '#quote', label: 'Quote' },
+  { href: '#contact', label: 'Contact' },
 ] as const

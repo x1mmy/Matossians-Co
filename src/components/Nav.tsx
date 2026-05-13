@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { PAGE_NAV } from '../siteNav'
 
-const quoteHref = '#quote'
+const quoteHref = '#contact'
 
 function NavLink({ href, label }: { href: string; label: string }) {
   return (

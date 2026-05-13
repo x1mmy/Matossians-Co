@@ -29,7 +29,7 @@ export function Hero() {
         </Reveal>
         <Reveal delayMs={240} className="flex flex-wrap items-center gap-4">
           <a
-            href="#quote"
+            href="#contact"
             className="btn-active inline-flex min-h-11 items-center justify-center rounded-full bg-[#111110] px-6 text-sm font-medium text-white transition-colors hover:bg-[#2a2a28]"
           >
             Get a Free Quote
