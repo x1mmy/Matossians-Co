@@ -1,6 +1,7 @@
 import { CtaSection } from './components/CtaSection'
 import { Footer } from './components/Footer'
 import { Hero } from './components/Hero'
+import { InstagramReels } from './components/InstagramReels'
 import { Nav } from './components/Nav'
 import { ServiceAreas } from './components/ServiceAreas'
 import { ServicesStrip } from './components/ServicesStrip'
@@ -14,6 +15,7 @@ export default function App() {
         <Hero />
         <ServicesStrip />
         <WhyUs />
+        <InstagramReels />
         <ServiceAreas />
         <CtaSection />
       </main>

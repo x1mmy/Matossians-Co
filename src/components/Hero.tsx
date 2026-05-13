@@ -1,6 +1,8 @@
+import { BeforeAfterSlider } from './BeforeAfterSlider'
 import { Reveal } from './Reveal'
+import { SITE } from '../siteNav'
 
-const workHref = '#services'
+const workHref = '#work'
 
 export function Hero() {
   return (
@@ -11,7 +13,7 @@ export function Hero() {
       <div className="flex flex-col justify-center gap-8 px-4 py-14 sm:px-6 lg:px-12 lg:py-20 xl:pl-[max(2rem,calc((100vw-80rem)/2+1.5rem))]">
         <Reveal>
           <p className="font-jetbrains text-xs font-medium uppercase tracking-[0.14em] text-[#666662]">
-            Hills District · Cherrybrook · Hawkesbury
+            Hills District · Northern Sydney · Hawkesbury
           </p>
         </Reveal>
         <Reveal delayMs={80}>
@@ -21,8 +23,8 @@ export function Hero() {
         </Reveal>
         <Reveal delayMs={160}>
           <p className="max-w-[52ch] text-lg leading-relaxed text-[#666662] sm:text-xl">
-            Sydney&apos;s property maintenance team for homeowners who don&apos;t compromise.
-            Pressure washing, lawn care, gutter cleaning, and more.
+            Local, family-run property maintenance across most of Sydney. Reliable ongoing care and
+            one-off jobs for homeowners, landlords, and small strata.
           </p>
         </Reveal>
         <Reveal delayMs={240} className="flex flex-wrap items-center gap-4">
@@ -41,20 +43,17 @@ export function Hero() {
         </Reveal>
         <Reveal delayMs={320}>
           <p className="max-w-md text-sm leading-relaxed text-[#666662]">
-            Property maintenance &amp; outdoor services done properly. Owner-led by Elwyn.
+            {SITE.businessLegalName}. Fully insured, professional, and flexible with scheduling.
+            Owner-led by {SITE.ownerName.split(' ')[0]}.
           </p>
         </Reveal>
       </div>
-      <div className="relative min-h-[min(100dvh,520px)] lg:min-h-[100dvh]">
-        <img
-          src="https://picsum.photos/seed/matossian/800/900"
-          alt="Outdoor property work by Matossian's and Co"
-          className="absolute inset-0 h-full w-full object-cover"
-          width={800}
-          height={900}
-          loading="eager"
-          decoding="async"
-          fetchPriority="high"
+      <div className="relative min-h-[min(100dvh,560px)] lg:min-h-[100dvh]">
+        <BeforeAfterSlider
+          beforeSrc="/work-after.png"
+          afterSrc="/work-before.png"
+          beforeAlt="Tall hedge and clippings on the brick driveway before cut-back"
+          afterAlt="Same driveway and hedge line after trim and tidy"
         />
       </div>
     </section>

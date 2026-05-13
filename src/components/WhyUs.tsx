@@ -1,13 +1,14 @@
 import { Reveal } from './Reveal'
+import { SITE } from '../siteNav'
 
 const stats = [
   {
-    title: '14 hrs, 1 man, 2 machines',
-    body: 'A real lawn day from our crew, straight from the yard, no shortcuts on the big runs.',
+    title: 'Trading since January 2021',
+    body: 'A local, family-run crew across most of Sydney, fully insured and flexible around your calendar.',
   },
   {
-    title: "Regular clients across Sydney's Hills District",
-    body: 'Neighbours refer neighbours when the finish is consistent and the gate gets closed.',
+    title: '14 hrs, 1 man, 2 machines',
+    body: 'A real lawn day from our crew, straight from the yard, no shortcuts on the big runs.',
   },
   {
     title: 'Every job done right, or we come back',
@@ -17,12 +18,15 @@ const stats = [
 
 export function WhyUs() {
   return (
-    <section className="border-b border-[#E0E0DC] px-4 py-16 sm:px-6 lg:px-8">
+    <section
+      id="why"
+      className="scroll-mt-28 border-b border-[#E0E0DC] px-4 py-16 sm:px-6 lg:px-8"
+    >
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
           <Reveal>
             <p className="font-jetbrains text-xs font-medium uppercase tracking-[0.14em] text-[#666662]">
-              Why homeowners call us
+              Why property owners call us
             </p>
             <h2 className="mt-3 font-playfair text-3xl font-bold tracking-tight text-[#111110] sm:text-4xl">
               Proof you can feel underfoot
@@ -50,7 +54,7 @@ export function WhyUs() {
                 </p>
               </blockquote>
               <figcaption className="mt-6 text-sm font-medium text-[#666662]">
-                Elwyn, Matossian&apos;s and Co
+                {SITE.ownerName}, {SITE.businessLegalName}
               </figcaption>
             </figure>
           </Reveal>

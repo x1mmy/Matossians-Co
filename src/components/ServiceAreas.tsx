@@ -2,16 +2,24 @@ import { Reveal } from './Reveal'
 
 const areas = [
   'Hills District',
-  'Cherrybrook',
   'Hawkesbury',
+  'Berowra',
+  'Arcadia',
+  'Cherrybrook',
+  'West Pennant Hills',
   'Castle Hill',
   'Baulkham Hills',
+  'Pymble',
   'Ryde',
+  'Sydney',
 ]
 
 export function ServiceAreas() {
   return (
-    <section className="border-b border-[#E0E0DC] px-4 py-16 sm:px-6 lg:px-8">
+    <section
+      id="areas"
+      className="scroll-mt-28 border-b border-[#E0E0DC] px-4 py-16 sm:px-6 lg:px-8"
+    >
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-8">
           <p className="font-jetbrains text-xs font-medium uppercase tracking-[0.14em] text-[#666662]">
